@@ -9,7 +9,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { db, useDB } from "@/lib/store";
 import { toast } from "sonner";
 import { cn } from "@/lib/utils";
-import { ExpenseFormDialog } from "@/pages/Expenses";
+import { ExpenseFormModal } from "@/components/expenses/ExpenseFormModal";
 import { NewPurchaseDialog } from "@/pages/Suppliers";
 
 type Mode = null | "sale" | "customer" | "payment" | "expense" | "purchase";
@@ -60,7 +60,7 @@ export function QuickActionsFab() {
         </DialogContent>
       </Dialog>
 
-      <ExpenseFormDialog
+      <ExpenseFormModal
         open={mode === "expense"}
         onOpenChange={(v) => { if (!v) close(); }}
         editing={null}
