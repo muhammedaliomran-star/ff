@@ -1,0 +1,6 @@
+{
+  "name": "سِجلّي — إدارة المحلات والأقساط",
+  "description": "نظام عربي لإدارة العملاء والفواتير والأقساط والمخزون والمصروفات ومتابعة السداد لمحلات التجزئة والتجار في مصر.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
